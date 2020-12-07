@@ -1,6 +1,6 @@
 # Coordinating tasks in Kulupu
 
-[![Join the chat at https://gitter.im/kulupu/coordination](https://badges.gitter.im/kulupu/coordination.svg)](https://gitter.im/kulupu/coordination?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/kulupu/governance](https://badges.gitter.im/kulupu/governance.svg)](https://gitter.im/kulupu/governance?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Kulupu is a blockchain run by the community. As a result, many tasks need to be handled in a decentralized and distributed manner. This is the page to coordinate different tasks that is to be done on Kulupu for short-to-mid-term. For long-term visions, please see [Roadmap of Kulupu](https://consensus.corepaper.org/wiki/Roadmap_of_Kulupu).
 
