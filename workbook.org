@@ -1,5 +1,4 @@
 #+title: Kulupu Core Developer Workbook
-#+startup: overview
 
 This is a workbook documenting plans and what is actually happening in
 Kulupu development. The workbook is maintained as a =org= document so
