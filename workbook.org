@@ -1,0 +1,71 @@
+#+title: Kulupu Core Developer Workbook
+#+startup: overview
+
+This is a workbook documenting plans and what is actually happening in
+Kulupu development. The workbook is maintained as a =org= document so
+that it works as an actual task list.
+
+The workbook is currently maintained by =sorpaas=.
+
+* Chain maintanence
+Common chain maintenance job.
+
+** Substrate maintanence
+
+*** TODO Monthly Substrate upstream update (November 2021)
+Update Substrate dependencies to the newest commit, as of
+November 2021.
+
+- [ ] Submit pin update PR.
+- [ ] Check migrations needed to add and remove.
+- [ ] Release node v2.10.
+- [ ] Local testing.
+- [ ] WebAssembly binary submission.
+- [ ] Exchange and explorer coordination.
+
+** Documentation
+
+*** TODO Create a template for Substrate upstream update
+Make a task list template that can be copied over for every Substrate
+upstream update. This both ensures that nothing is missed, and someone
+else can easily pick up the work.
+
+*** TODO Write the incident report for the network split in v2.7.0
+The network split was already documented in a security advisory on
+[[https://github.com/kulupu/kulupu/security/advisories/GHSA-63c9-m729-6xx3][Github]]. However, historically, we usually also create an incident
+report in order to also document lessons learned and other relevant
+information.
+
+*** TODO Document the process for miners to unlock mined coins
+This should be a separate document in the Kulupu website. Right now
+the procedure is rather just passed month-to-month which is really
+unoptimal.
+
+*** TODO Create a Kulupu-specific document for democracy participation
+Although the process on Kulupu is similar to Polkadot, we still need
+Kulupu-specific documentations for democracy voting, council voting,
+treasury proposals and tips.
+
+** Testnet
+
+*** TODO Bootstrap the Kulupu testnet
+The Kulupu testnet uses simulated PoW in order to emulate as much as
+the current PoW code path, while taking no actual mining
+resources. This is done through a fixed validator set with hashes of
+the current time slot (currently set to be 1 second).
+
+* Proof of work
+
+** TODO Implementation of engine =v3=
+The engine =v3= aims at making the block structure more light client
+friendly. Right now we need to query the runtime in order to know the
+difficulty. This works and is really customizable, but not so much for
+light clients.
+
+- [ ] Difficulty post-runtime digest.
+- [ ] Era-based transition.
+
+* Actor-based smart contract
+Design and development of actor-based smart contract on Kulupu and
+Neatcoin. The detail of this task is in the corresponding Neatcoin
+workbook.
